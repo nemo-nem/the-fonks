@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE FONKS | Official Gateway</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        .gateway-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #1a1a1a 0%, #000 100%);
+            text-align: center;
+        }
+        .choice-wrapper {
+            display: flex;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .choice-card {
+            padding: 2rem;
+            border: 1px solid #333;
+            transition: 0.3s;
+            text-decoration: none;
+            color: white;
+            width: 250px;
+        }
+        .choice-card:hover {
+            border-color: var(--accent-color);
+            background: rgba(204, 255, 0, 0.05);
+            transform: translateY(-10px);
+        }
+        .choice-card h3 { font-family: 'Anton'; font-size: 2rem; margin-bottom: 10px; }
+        
+        @media (max-width: 768px) {
+            .choice-wrapper { flex-direction: column; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="gateway-container">
+        <h1 style="font-family: 'Anton'; font-size: clamp(4rem, 10vw, 8rem); color: var(--accent-color);">THE FONKS</h1>
+        <p class="subtitle">CHOOSE YOUR GROOVE</p>
+
+        <div class="choice-wrapper">
+            <a href="fonks_tournee.html" class="choice-card">
+                <h3>WORLD TOUR</h3>
+                <p>Le date, i sold out, il viaggio globale.</p>
+            </a>
+            <a href="sarcedo.html" class="choice-card" style="border-color: var(--accent-color);">
+                <h3>SARCEDO CITY</h3>
+                <p>L'evento finale. Prevendite e Press.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
